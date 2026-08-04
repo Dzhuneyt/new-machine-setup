@@ -7,3 +7,11 @@ Install:
 5. [Homebrew](https://brew.sh/)
 
 Authenticate to each individually.
+
+## Post-install: disable Claude Code attribution
+
+After installing Claude Code, disable the attribution it adds to git commits and
+pull requests by setting `attribution.commit` and `attribution.pr` to empty
+strings in the user settings (`~/.claude/settings.json`), merging into any
+existing config rather than overwriting it. See the
+[settings docs](https://code.claude.com/docs/en/settings).
